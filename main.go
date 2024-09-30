@@ -8,6 +8,8 @@ import (
 	"kredit-plus/service/repo"
 	"kredit-plus/service/usecase"
 	"os"
+
+	"github.com/gofiber/fiber/v2"
 	"sync"
 
 	redisCluster "github.com/go-redis/redis/v8"

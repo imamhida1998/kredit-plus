@@ -55,8 +55,6 @@ func (repository *redisRepositoryImpl) DelValue(keyValue string) error {
 }
 
 func (repository *redisRepositoryImpl) GetTtl(keyValue string) time.Duration {
-
 	ttl, _ := repository.Session.TTL(ctx, keyValue).Result()
-
 	return ttl
 }
